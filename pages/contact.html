@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Cinema - Contact &amp; Inquiries</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="schedule.html">Movie Schedule</a></li>
+                <li><a href="contact.html">Contact &amp; Inquiries</a></li>
+            </ul>
+        </nav><hr>
+    </header>
+
+    <main>
+        <h1>Contact &amp; Ticket Inquiries</h1>
+
+        <section>
+            <h2>Location &amp; Operating Hours</h2>
+            <p>We are ready to assist you with inquiries regarding showtimes, group reservations, lost and found, or private theater rentals.</p>
+            <p>
+                <img src="../images/cinema.jpg" alt="Auditorium and seating inside ABC Cinema" width="480">
+            </p>
+            <p><strong>Address:</strong> 124 Silver Screen Boulevard, Downtown Arts District</p>
+            <p><strong>Box Office Hours:</strong></p>
+            <ul>
+                <li>Monday &ndash; Thursday: 11:00 AM &ndash; 10:30 PM</li>
+                <li>Friday &ndash; Sunday: 10:00 AM &ndash; 11:45 PM</li>
+            </ul>
+            <p><strong>Direct Telephone:</strong> +1 (555) 019-2834</p>
+            <p><strong>Email:</strong> <a href="mailto:info@abccinema.com">info@abccinema.com</a></p>
+        </section>
+
+        <section>
+            <h2>Send Us an Inquiry</h2>
+            <p>Please complete the form below for ticket inquiries, group bookings, or feedback. Fields marked with an asterisk (*) are required.</p>
+            
+            <form action="contact.html" method="get">
+                <p>
+                    <label for="fullname">Full Name *:</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address *:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone">
+                </p>
+
+                <p>
+                    <label for="inquiry-type">Inquiry Topic:</label><br>
+                    <select id="inquiry-type" name="inquiry-type">
+                        <option value="booking">Ticket &amp; Seat Reservation</option>
+                        <option value="group">Group / Corporate Booking</option>
+                        <option value="lost-found">Lost &amp; Found</option>
+                        <option value="feedback">General Feedback</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="movie-choice">Preferred Movie (if applicable):</label><br>
+                    <select id="movie-choice" name="movie-choice">
+                        <option value="none">-- Select a Movie --</option>
+                        <option value="cosmic-voyage">The Cosmic Voyage</option>
+                        <option value="shadows-past">Shadows of the Past</option>
+                        <option value="kingdom-legends">Kingdom of Legends</option>
+                        <option value="laugh-track">The Laugh Track</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="tickets">Number of Tickets:</label><br>
+                    <input type="number" id="tickets" name="tickets" min="1" max="50" value="1">
+                </p>
+
+                <p>
+                    <label for="message">Message / Details *:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit Inquiry">
+                    <input type="reset" value="Clear Form">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ABC Cinema. All rights reserved.</p>
+        <p>Email us at: <a href="mailto:info@abccinema.com">info@abccinema.com</a></p>
+    </footer>
+
+</body>
+</html>
